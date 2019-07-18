@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1651315685.index
+\jetty-server-tutorial\src\main\java
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2784258293.index
+\firstjavaservlet\src\main\java
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1188751307.index
+\firstjavaservlet\src\main\java
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2377094644.index
+\CommonsTest\src\main\java
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1487397253.index
+\FileUploadServlet\src
+C:\Users\Huy Huynh\Documents\JavaWebApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4270478662.index
+\jetty-server-tutorial\src\main\java

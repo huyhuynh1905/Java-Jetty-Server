@@ -1,0 +1,8 @@
+127.0.0.1 - - [18/Jul/2019:01:12:05 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:01:12:06 +0700] "GET /firstjavaservlet/upload.jsp HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:01:14:48 +0700] "GET /firstjavaservlet/ HTTP/1.1" 200 399
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:01:14:51 +0700] "GET /firstjavaservlet/ HTTP/1.1" 200 399
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:01:34:38 +0700] "GET /firstjavaservlet/upload.jsp HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:01:34:40 +0700] "POST /firstjavaservlet/uploadFile HTTP/1.1" 200 465
+127.0.0.1 - - [18/Jul/2019:09:03:07 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jul/2019:09:03:07 +0700] "GET /firstjavaservlet/upload.jsp HTTP/1.1" 200 553
