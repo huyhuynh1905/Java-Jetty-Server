@@ -44,12 +44,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.huyhuynh.jettyserver"/>
 			<item value="java.test.commons"/>
 			<item value="com.firstservlet.sudy"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="jetty-server-tutorial"/>
 			<item value="CommonsTest"/>
 			<item value="firstjavaservlet"/>
 		</list>

@@ -1,0 +1,78 @@
+package com.huyhuynh.controller.servlet;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.eclipse.jetty.server.Dispatcher;
+
+import com.huyhuynh.controller.database.ConnectDB;
+
+/**
+ * Servlet implementation class HandlingLogin
+ */
+public class HandlingLogin extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public HandlingLogin() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String user = request.getParameter("username");
+		String pass = request.getParameter("pass");
+		Connection conn = ConnectDB.getConnectLogin();
+		String sql = "SELECT * FROM dbo.Login WHERE username = ? AND password = ?";
+		try {
+			PreparedStatement pr = conn.prepareStatement(sql);
+			pr.setString(1, user);
+			pr.setString(2, pass);
+			ResultSet rs = pr.executeQuery();
+			if(rs.next()) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/views/login.html");
+				dispatcher.forward(request, response);
+			} else {
+				response.sendRedirect("/serverjetty");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+		String user = request.getParameter("username");
+		String pass = request.getParameter("pass");
+		if(user.equals("huy")&&pass.equals("123")) {
+			//request.setAttribute("user", user);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/views/login.html");
+			dispatcher.forward(request, response);
+		} else {
+			//response.sendRedirect("/serverjetty");
+		}
+	}
+
+}

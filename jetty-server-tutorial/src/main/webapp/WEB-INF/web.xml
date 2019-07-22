@@ -5,7 +5,7 @@
     <description></description>
     <display-name>HandlingLogin</display-name>
     <servlet-name>HandlingLogin</servlet-name>
-    <servlet-class>com.huyhuynh.servletcontroller.HandlingLogin</servlet-class>
+    <servlet-class>com.huyhuynh.controller.servlet.HandlingLogin</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HandlingLogin</servlet-name>
@@ -15,7 +15,7 @@
     <description></description>
     <display-name>LoginExactly</display-name>
     <servlet-name>LoginExactly</servlet-name>
-    <servlet-class>com.huyhuynh.servletcontroller.LoginExactly</servlet-class>
+    <servlet-class>com.huyhuynh.controller.servlet.LoginExactly</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginExactly</servlet-name>
